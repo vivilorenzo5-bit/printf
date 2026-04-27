@@ -6,7 +6,7 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:27:42 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/27 11:11:37 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/27 12:10:56 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,17 @@ int	ft_putnbr_len(int n)
 	}
 	if (n >= 10)
 		len += ft_putnbr_len(n / 10);
+	len += ft_putchar_len((n % 10) + '0');
+	return (len);
+}
+
+int	ft_putunsigned_len(unsigned int n)
+{
+	int	len;
+
+	len = 0;
+	if (n >= 10)
+		len += ft_putunsigned_len(n / 10);
 	len += ft_putchar_len((n % 10) + '0');
 	return (len);
 }

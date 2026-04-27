@@ -6,7 +6,7 @@
 #    By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/24 16:27:16 by vlourenc          #+#    #+#              #
-#    Updated: 2026/04/27 10:36:55 by vlourenc         ###   ########.fr        #
+#    Updated: 2026/04/27 12:15:34 by vlourenc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 RM = rm -f
 
-SRCS = ft_printf.c ft_print_utils.c
+SRCS = ft_printf.c ft_print_utils.c ft_printf_hex.c
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
