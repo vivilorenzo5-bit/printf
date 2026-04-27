@@ -6,7 +6,14 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:27:42 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/24 16:27:43 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/27 10:18:29 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+int	ft_putchar_len(char c)
+{
+	ft_putchar_fd(c, 1);
+	return (1);
+}
