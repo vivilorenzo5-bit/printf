@@ -6,12 +6,12 @@
 #    By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/24 16:27:16 by vlourenc          #+#    #+#              #
-#    Updated: 2026/04/24 16:27:21 by vlourenc         ###   ########.fr        #
+#    Updated: 2026/04/27 10:36:55 by vlourenc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
-LIBFT = libftprintf
+LIBFT = libft
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
@@ -23,9 +23,9 @@ OBJS = $(SRCS:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	@make -C $(LIBFT)
-	@cp $(LIBFT)/libft.a .
-	@mv libft.a $(NAME)
+	make -C $(LIBFT)
+	cp $(LIBFT)/libft.a .
+	mv libft.a $(NAME)
 	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c
@@ -33,11 +33,11 @@ $(NAME): $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
-	@make -C $(LIBFT) clean
+	make -C $(LIBFT) clean
 
 fclean: clean
 	$(RM) $(NAME)
-	@make -C $(LIBFT) fclean
+	make -C $(LIBFT) fclean
 
 re: fclean all
 

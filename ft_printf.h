@@ -6,7 +6,7 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:09:34 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/24 16:13:15 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/27 11:09:44 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,5 +17,8 @@
 # include "libft/libft.h"
 
 int	ft_printf(const char *format, ...);
+int	ft_putchar_len(char c);
+int	ft_putstr_len(char *str);
+int	ft_putnbr_len(int n);
 
 #endif
