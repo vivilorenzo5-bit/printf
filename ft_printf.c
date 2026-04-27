@@ -6,7 +6,7 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:27:10 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/27 12:25:31 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/27 12:39:53 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,46 +62,43 @@ int	ft_printf(const char *format, ...)
 	return (totalcount);
 }
 
-/*
-#include <stdio.h>
 #include <limits.h>
 
-int	main(void)
-{
-	int	meu;
-	int	orig;
-	void	*ptr = &meu;
+// int	main(void)
+// {
+// 	int	meu;
+// 	int	orig;
+// 	void	*ptr = &meu;
 
-	printf("--- 1. Caracteres e Percentagem ---\n");
-	meu = ft_printf("Meu: %c e %%\n", 'A');
-	orig = printf("Ori: %c e %%\n", 'A');
-	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
+// 	printf("--- 1. Caracteres e Percentagem ---\n");
+// 	meu = ft_printf("Meu: %c e %%\n", 'A');
+// 	orig = printf("Ori: %c e %%\n", 'A');
+// 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
-	printf("--- 2. Strings e NULL ---\n");
-	meu = ft_printf("Meu: [%s] | NULL: [%s]\n", "42 Lisboa", (char *)NULL);
-	orig = printf("Ori: [%s] | NULL: [%s]\n", "42 Lisboa", (char *)NULL);
-	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
+// 	printf("--- 2. Strings e NULL ---\n");
+// 	meu = ft_printf("Meu: [%s] | NULL: [%s]\n", "42 Lisboa", (char *)NULL);
+// 	orig = printf("Ori: [%s] | NULL: [%s]\n", "42 Lisboa", (char *)NULL);
+// 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
-	printf("--- 3. Inteiros (d e i) ---\n");
-	meu = ft_printf("Meu: %d | %i\n", INT_MAX, INT_MIN);
-	orig = printf("Ori: %d | %i\n", INT_MAX, INT_MIN);
-	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
+// 	printf("--- 3. Inteiros (d e i) ---\n");
+// 	meu = ft_printf("Meu: %d | %i\n", INT_MAX, INT_MIN);
+// 	orig = printf("Ori: %d | %i\n", INT_MAX, INT_MIN);
+// 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
-	printf("--- 4. Unsigned (u) ---\n");
-	meu = ft_printf("Meu: %u | %u\n", 0, 4294967295U);
-	orig = printf("Ori: %u | %u\n", 0, 4294967295U);
-	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
+// 	printf("--- 4. Unsigned (u) ---\n");
+// 	meu = ft_printf("Meu: %u | %u\n", 0, 4294967295U);
+// 	orig = printf("Ori: %u | %u\n", 0, 4294967295U);
+// 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
-	printf("--- 5. Hexadecimais (x e X) ---\n");
-	meu = ft_printf("Meu: %x | %X\n", 255, 255);
-	orig = printf("Ori: %x | %X\n", 255, 255);
-	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
+// 	printf("--- 5. Hexadecimais (x e X) ---\n");
+// 	meu = ft_printf("Meu: %x | %X\n", 255, 255);
+// 	orig = printf("Ori: %x | %X\n", 255, 255);
+// 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
-	printf("--- 6. Ponteiros (p) ---\n");
-	meu = ft_printf("Meu: %p | NULL: %p\n", ptr, NULL);
-	orig = printf("Ori: %p | NULL: %p\n", ptr, NULL);
-	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
+// 	printf("--- 6. Ponteiros (p) ---\n");
+// 	meu = ft_printf("Meu: %p | NULL: %p\n", ptr, NULL);
+// 	orig = printf("Ori: %p | NULL: %p\n", ptr, NULL);
+// 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
-	return (0);
-}
-*/
+// 	return (0);
+// }
