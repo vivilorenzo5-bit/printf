@@ -6,7 +6,7 @@
 #    By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/24 16:27:16 by vlourenc          #+#    #+#              #
-#    Updated: 2026/04/27 12:15:34 by vlourenc         ###   ########.fr        #
+#    Updated: 2026/04/28 15:57:40 by vlourenc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,9 +27,6 @@ $(NAME): $(OBJS)
 	cp $(LIBFT)/libft.a .
 	mv libft.a $(NAME)
 	$(AR) $(NAME) $(OBJS)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJS)
