@@ -6,7 +6,7 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:27:10 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/28 16:24:45 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:31:53 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,8 +81,8 @@ int	ft_printf(const char *format, ...)
 // 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
 // 	printf("--- 3. Inteiros (d e i) ---\n");
-// 	meu = ft_printf("Meu: %d | %i\n", INT_MAX, INT_MIN);
-// 	orig = printf("Ori: %d | %i\n", INT_MAX, INT_MIN);
+// 	meu = ft_printf("Meu: %d | %i\n", -1, 9);
+// 	orig = printf("Ori: %d | %i\n", -1, 9);
 // 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
 // 	printf("--- 4. Unsigned (u) ---\n");
