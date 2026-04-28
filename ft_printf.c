@@ -6,7 +6,7 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:27:10 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/28 15:54:06 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/28 15:58:54 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ int	check_format(char specifier, va_list args)
 		count += ft_putptr_len(va_arg(args, unsigned long));
 	else if (specifier == '%')
 		count += ft_putchar_len('%');
-	else if (specifier == 'a')
-		count += ft_putstr_len("wowow 42 fkjad");
 	return (count);
 }
 
@@ -101,8 +99,6 @@ int	ft_printf(const char *format, ...)
 // 	meu = ft_printf("Meu: %p | NULL: %p\n", ptr, NULL);
 // 	orig = printf("Ori: %p | NULL: %p\n", ptr, NULL);
 // 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
-
-// 	ft_printf("Hello %a World\n");
 
 // 	return (0);
 // }
