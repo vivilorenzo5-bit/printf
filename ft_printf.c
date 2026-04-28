@@ -6,7 +6,7 @@
 /*   By: vlourenc <vlourenc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 16:27:10 by vlourenc          #+#    #+#             */
-/*   Updated: 2026/04/28 15:58:54 by vlourenc         ###   ########.fr       */
+/*   Updated: 2026/04/28 16:24:45 by vlourenc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,14 +49,14 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1])
 		{
-			totalcount += check_format(format[i + 1], args);
-			i += 2;
+			i++;
+			totalcount += check_format(format[i], args);
 		}
 		else
 		{
 			totalcount += ft_putchar_len(format[i]);
-			i++;
 		}
+		i++;
 	}
 	va_end(args);
 	return (totalcount);
@@ -71,7 +71,7 @@ int	ft_printf(const char *format, ...)
 // 	void	*ptr = &meu;
 
 // 	printf("--- 1. Caracteres e Percentagem ---\n");
-// 	meu = ft_printf("Meu: %c e %%\n", 'A');
+// 	meu = ft_printf(">>>>>%\n", 'A');
 // 	orig = printf("Ori: %c e %%\n", 'A');
 // 	printf("Retornos: Meu %d | Ori %d\n\n", meu, orig);
 
